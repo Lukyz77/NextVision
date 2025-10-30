@@ -13,6 +13,8 @@ This project serves as a **portfolio reference**, showcasing a clean architectur
 -  **Lucide Icons** — clean, modern SVG icons  
 -  **Modular Architecture** — every section built as a standalone React component  
 
+
+```bash
 ## 🧰 Installation & Setup
 
 # 1. Clone the repository
