@@ -44,11 +44,11 @@ const Contact = () => {
           >
             <div className="flex items-center gap-4">
               <Mail className="text-[#05D33A]" />
-              <p className="text-gray-300 text-lg">info@nextvision.com</p>
+              <p className="text-gray-300 text-lg">example@nextvision.com</p>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="text-[#05D33A]" />
-              <p className="text-gray-300 text-lg">+420 645 345 854</p>
+              <p className="text-gray-300 text-lg">+420 123 456 789</p>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="text-[#05D33A]" />

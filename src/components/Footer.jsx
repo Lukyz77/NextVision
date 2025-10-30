@@ -104,7 +104,7 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
           className="text-gray-500 text-sm mt-8"
         >
-          © {new Date().getFullYear()} Smartie Agency. All rights reserved.
+          © {new Date().getFullYear()} NextVision agency. All rights reserved.
         </motion.p>
       </div>
     </footer>

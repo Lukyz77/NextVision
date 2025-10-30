@@ -78,7 +78,7 @@ const Navbar = () => {
                 }}
                 onClick={() => setIsOpen(!isOpen)}
                   whileHover={{ scale: 1.05, color: '#05D33A', transition: { duration: 0.3} }}
-                  className="text-5xl md:text-6xl font-[outfit] font-extrabold transition-colors duration-200"
+                  className="text-4xl md:text-6xl font-[outfit] font-extrabold transition-colors duration-200"
                 >
                   {item.label}
                 </motion.a>
