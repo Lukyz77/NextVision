@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import projekt1 from '../assets/projekt1.png'
 import projekt2 from '../assets/projekt2.png'
 import projekt3 from '../assets/projekt3.png'
@@ -26,6 +27,12 @@ const Portfolio = () => {
     image: projekt3,
   },
 ];
+
+const [activeIndex, setActiveIndex] = useState(false);
+
+  const toggleActive = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   return (
     <section
@@ -64,6 +71,7 @@ const Portfolio = () => {
                 delay: index * 0.2,
                 ease: "easeOut",
               }}
+              onClick={() => toggleActive(index)}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5"
             >
               {/* Obrázek */}
@@ -74,7 +82,14 @@ const Portfolio = () => {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-left">
+              <div className={`
+                absolute inset-0 bg-black/90 opacity-0 ${
+                activeIndex === index
+                  ? "opacity-100"
+                  : "opacity-0 md:group-hover:opacity-100"
+                }
+               md:group-hover:opacity-100 
+                transition-opacity duration-500 flex flex-col justify-end p-6 text-left`}>
                 <div>
                   <p className="text-[#05D33A] text-sm uppercase tracking-wider">
                     {project.category}
