@@ -33,7 +33,7 @@ const Contact = () => {
         </motion.div>
 
         {/* Contact grid */}
-        <div className="mt-16 grid md:grid-cols-2 gap-12">
+        <div className="mt-24 grid md:grid-cols-2 gap-12">
           {/* Left: Info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -50,12 +50,12 @@ const Contact = () => {
               <Phone className="text-[#05D33A]" />
               <p className="text-gray-300 text-lg">+420 123 456 789</p>
             </div>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <MapPin className="text-[#05D33A]" />
               <p className="text-gray-300 text-lg">
                 Prague, Czech Republic
               </p>
-            </div>
+            </div> */}
 
             <div className="mt-8 text-gray-400">
               <p>

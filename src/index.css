@@ -1,2 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
